@@ -23,13 +23,13 @@ mysqlの立ち上げ<br>
 > mysql -u root -p
 <br>
 データベースの作成<br>
-> mysql> create database testdb;
+mysql> create database testdb;
 <br>
 テーブルの作成<br>
-> mysql> create table testdb.login(number int(10) primary key auto_increment, id char(20), passwd char(129));
+mysql> create table testdb.login(number int(10) primary key auto_increment, id char(20), passwd char(129));
 <br>
 作成したテーブルの確認<br>
-> mysql> show fields from testdb.login;<br>
+mysql> show fields from testdb.login;<br>
 <br>
 
 ### 利用するデータベースの設定方法
