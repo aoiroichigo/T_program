@@ -1,4 +1,4 @@
-# chatWeb
+# webChat
 flaskを利用したwebチャットアプリ<br>
 機能：アカウントの作成，ログイン，チャット
 
