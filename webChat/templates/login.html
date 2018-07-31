@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+    <head></head>
+    <body>
+        <form action="/login" method="post">
+            <h1>ログイン画面</h1>
+            <div>
+                <label for="uname">Login ID: </label>
+                <input type="text" name="ID">
+            </div>
+            <div>
+                <label for="uname">Password:</label>
+                <input type="password" name="passwd">
+            </div>
+
+            {% if login_error %}
+                <p style="color:#ff0000;">ログインに失敗しました</p>
+            {% else %}
+                <br>
+            {% endif %}
+            <div>
+                <button name="login_button" value="hoge">ログイン</button>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+    <head></head>
+    <body>
+        <h1>ユーザーIDとパスワードを作成してください</h1>
+        <h3>チャット欄にはユーザーIDが記載されます</h3>
+        <form action="/signUp" method="post">
+            <div>
+                <label for="uname">ユーザーID: </label>
+                <input type="text" name="Id">
+            </div>
+            <div>
+                <label for="uname">パスワード: </label>
+                <input type="password" name="Pass">
+            </div>
+            <div>
+                <button name="button" value="hoge">アカウント作成</button>
+            </div>
+            {% if error %}
+                <p style="color:#ff0000;">アカウントが作成できませんでした</p>
+            {% else %}
+                <br>
+            {% endif %}
+        </form>
+    </body>
+</html>
